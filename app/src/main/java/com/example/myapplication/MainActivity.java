@@ -16,13 +16,16 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+//    private static final String JSON_URL = "quwerty1.github.io/assets/models.json";// UTF-8
     ListAdapter adapter;
+
     ListView listView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         listView = findViewById(R.id.list);
+//        loadJSONFromURL(JSON_URL);
         ArrayList<mebel> mebels = new ArrayList<>();
 
         mebels.add(new mebel("Тумба Хельмер","xxxx","helmer"));
@@ -44,6 +47,9 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    }
+
+    private void loadJSONFromURL(String jsonUrl) {
     }
 
 }
