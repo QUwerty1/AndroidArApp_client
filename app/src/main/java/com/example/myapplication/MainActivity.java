@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
 //        loadJSONFromURL(JSON_URL);
         ArrayList<mebel> mebels = new ArrayList<>();
 
-        mebels.add(new mebel("Тумба Хельмер","xxxx","helmer"));
-        mebels.add(new mebel("мебель два","1xxx","klippan"));
+        mebels.add(new mebel("Тумба Хельмер","99 999 руб","helmer")); //добавление новыйх обьектов что бы всё коректно работало перейдите в класс ListAdapter
+        mebels.add(new mebel("мебель два","1xxx","klippan"));// Если вы реальзуете json то это функция вам не понадобиться
         mebels.add(new mebel("мебель два","1xxx","odvar"));
         adapter = new ListAdapter(this, mebels);
         listView.setAdapter(adapter);
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
                 Activity_2.name1= position;
-                Activity_2.name2 = id;
+//                Activity_2.name2 = id;
                 Intent intent = new Intent(MainActivity.this, Activity_2.class);
                 startActivity(intent);
 

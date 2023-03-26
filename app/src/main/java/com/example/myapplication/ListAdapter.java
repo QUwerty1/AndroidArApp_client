@@ -42,7 +42,7 @@ public class ListAdapter extends BaseAdapter {
         switch (m.image){
             case ("helmer"): imag1.setImageResource(R.drawable.helmer);break;
             case ("klippan"): imag1.setImageResource(R.drawable.klippan);break;
-            case ("odvar"): imag1.setImageResource(R.drawable.odvar);break;
+            case ("odvar"): imag1.setImageResource(R.drawable.odvar);break;//если будите добовлять новй объект обязательно добавте суда фото этого объекта
 
         }
         return convertView;
